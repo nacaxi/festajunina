@@ -7,6 +7,18 @@ body{
     background-color: black;
 }
 
-.paragrafo{
-    color: white
+.teste{
+    font-size: xx-large;
+}
+
+.paragrafo1{
+    color: #00FFFF;
+}
+
+.paragrafo2{
+    color: #FF00FF;
+}
+
+.paragrafo3{
+    color: #FFFF00;
 }
