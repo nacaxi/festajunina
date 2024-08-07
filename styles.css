@@ -25,7 +25,7 @@ header {
 }
 
 .titulo{
-    text-decoration: none;
+    text-decoration: solid;
 }
 
 header h1 {
