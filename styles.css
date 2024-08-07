@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 :root{
-    --cabecalho: #054274;
+    --cabecalho: #ffff80;
     --cor-de-fundo: #0b5c5f;
     --cor-de-texto: white;
     --cor-de-borda: white;
@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: var(--cabecalho);
-    color: var(--cor-de-texto);
+    color: black;
     padding: 20px 0;
     text-align: center;
 }
