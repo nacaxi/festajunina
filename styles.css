@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root{
+    --cabecalho: #054274;
+    --cor-de-fundo: #0b5c5f;
+    --cor-de-texto: white;
+    --cor-de-borda: white;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background: rgb(255,0,255);
+    background: linear-gradient(0deg, rgb(212, 28, 212) 0%, rgba(0,255,255,1) 100%);
+}
+
+header {
+    background-color: var(--cabecalho);
+    color: var(--cor-de-texto);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    color: var(--cor-de-texto);
+}
+
+section {
+    margin-bottom: 40px;
+    font-size: large;
+}
+
+section h2 {
+    text-align: center;
+    color: var(--cor-de-texto);
+    border-top: 5px solid var(--cor-de-borda);
+    padding-top: 10px;
+    border-bottom: 5px solid var(--cor-de-borda);
+    padding-bottom: 10px;
+    border-left: 5px solid var(--cor-de-borda);
+    padding-left: 10px;
+    border-right: 5px solid var(--cor-de-borda);
+    padding-right: 10px;
+}
+
+img{
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+.imagem{
+    text-align: center;
+}
