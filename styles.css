@@ -22,10 +22,11 @@ header {
     color: var(--cor-de-texto);
     padding: 20px 0;
     text-align: center;
+    color: var(--cor-de-texto);
 }
 
-.titulo{
-    text-decoration: solid;
+.titulo-link {
+    color: var(--cor-de-texto);
 }
 
 header h1 {
