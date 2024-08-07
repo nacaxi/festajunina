@@ -15,6 +15,7 @@ body {
     padding: 0;
     background: rgb(255,0,255);
     background: linear-gradient(0deg, #ffffba 0%, #ffffe0 100%);
+    color: black;
 }
 
 header {
@@ -40,7 +41,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: black;
     text-decoration: underline;
     font-weight: bold;
 }
