@@ -61,16 +61,9 @@ section {
 }
 
 section h2 {
-    text-align: center;
     color: var(--cor-de-texto);
-    border-top: 5px solid var(--cor-de-borda);
-    padding-top: 10px;
     border-bottom: 5px solid var(--cor-de-borda);
     padding-bottom: 10px;
-    border-left: 5px solid var(--cor-de-borda);
-    padding-left: 10px;
-    border-right: 5px solid var(--cor-de-borda);
-    padding-right: 10px;
 }
 
 img{
