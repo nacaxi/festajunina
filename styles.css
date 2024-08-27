@@ -29,6 +29,13 @@ header {
     color: var(--cor-de-texto);
 }
 
+.bandeira{
+    max-width: 500;
+    max-height: 500;
+    width: auto;
+    height: auto;
+}
+
 header h1 {
     margin: 0;
     font-size: 2.5em;
