@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     background: rgb(255,0,255);
-    background: linear-gradient(0deg, #ffffaa 0%, #ffffaa 100%);
+    background: linear-gradient(0deg, #ffffaa 0%, #ffffff 100%);
 }
 
 header {
