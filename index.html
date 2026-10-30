@@ -3,69 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festa Junina</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Festa Junina | CCM República Oriental Uruguai</title>
+    <meta name="description" content="Comidas, tradições e brincadeiras da festa junina do CCM República Oriental Uruguai.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Lexend:wght@300..700&display=swap">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header>
-        <h1><a class="titulo-link" href="">Festa Junina</a></h1>
-        <nav>
-            <ul>
-                <li><a href=https://portal-uruguai.vercel.app>Portal Uruguai</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#comidas">Comidas</a></li>
-                <li><a href="#tradicoes">Tradições</a></li>
-                <li><a href="#brincadeiras">Brincadeiras</a></li>
-            </ul>
-        </nav>
-        <img class="bandeira" src="bandeirinha 2.gif" alt="">
+
+    <header class="cabecalho">
+        <div class="bandeirinhas" aria-hidden="true"></div>
+        <div class="cabecalho-titulo">
+            <h1>Festa Junina</h1>
+            <p>CCM República Oriental Uruguai</p>
+        </div>
     </header>
-    
+
+    <nav class="menu" aria-label="Seções da página">
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#comidas">Comidas</a></li>
+            <li><a href="#tradicoes">Tradições</a></li>
+            <li><a href="#brincadeiras">Brincadeiras</a></li>
+            <li><a class="menu-portal" href="https://portal-uruguai.vercel.app">Portal Uruguai</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="sobre">
-            <h2>SOBRE</h2>
-            <p>A festa junina é uma celebração tradicional no Brasil e no CCM República Oriental Uruguai, realizada no mês de julho em homenagem aos santos católicos São João, Santo Antônio e São Pedro.</p>
-            <div class="imagem"><img src="festa.jpg" alt="festa"></div>
-            <p>A festa foi marcada por comidas típicas, danças de quadrilha, músicas e decorações coloridas.</p>
-            <div class="imagem"><img src="festajunina.jpg" alt="festa"></div>
+
+        <section class="secao secao-sobre" id="sobre">
+            <div class="container">
+                <h2>Sobre a festa</h2>
+                <div class="duas-colunas">
+                    <div class="texto">
+                        <p>A festa junina é uma celebração tradicional no Brasil e no CCM República Oriental Uruguai, realizada no mês de julho em homenagem aos santos católicos São João, Santo Antônio e São Pedro.</p>
+                        <p>A festa foi marcada por comidas típicas, danças de quadrilha, músicas e decorações coloridas.</p>
+                    </div>
+                    <div class="fotos">
+                        <img src="festa.jpg" alt="Decoração e participantes da festa junina" loading="lazy">
+                        <img src="festajunina.jpg" alt="Pessoas reunidas durante a festa junina" loading="lazy">
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        <section id="comidas">
-            <h2>COMIDAS</h2>
-            <ul>
-                <li>Crepe</li>
-                <li>Pastel</li>
-                <li>Bolo</li>
-                <li>Pipoca</li>
-                <li>Quentão</li>
-            </ul>
-            <div class="imagem"><img src="comida.jpg" alt="comidas"></div>
-            <div class="imagem"><img src="comidaas.png" alt="comidas"></div>
+
+        <section class="secao secao-comidas" id="comidas">
+            <div class="container">
+                <h2>Comidas</h2>
+                <ul class="etiquetas">
+                    <li>Crepe</li>
+                    <li>Pastel</li>
+                    <li>Bolo</li>
+                    <li>Pipoca</li>
+                    <li>Quentão</li>
+                </ul>
+                <div class="fotos fotos-lado-a-lado">
+                    <img src="comida.jpg" alt="Comidas típicas servidas na festa" loading="lazy">
+                    <img src="comidaas.png" alt="Mesa com as comidas da festa junina" loading="lazy">
+                </div>
+            </div>
         </section>
-        
-        <section id="tradicoes">
-            <h2>TRADIÇÕES</h2>
-            <p>A festa junina do CCM República Oriental Uruguai é conhecida por suas tradições, como as comidas, decoração, vestimentas e, principalmente a quadrilha.</p>
-            <div class="imagem"><img src="escola.jpg" alt="escola"></div>
-            <p>A quadrilha contou com apresentações de várias turmas e dos professores, com diversas músicas. Um destaque especial foi a quadrilha do terceirão, que apresentou uma coreografia totalmente original, criada do zero.</p>
-            <div class="imagem"><img src="ensaio.jpg" alt="ensaios"></div>
-            <div class="imagem"><img src="quadrilha.png" alt="ensaios"></div>
+
+        <section class="secao secao-tradicoes" id="tradicoes">
+            <div class="container">
+                <h2>Tradições</h2>
+                <div class="texto texto-duas-colunas">
+                    <p>A festa junina do CCM República Oriental Uruguai é conhecida por suas tradições, como as comidas, decoração, vestimentas e, principalmente, a quadrilha.</p>
+                    <p>A quadrilha contou com apresentações de várias turmas e dos professores, com diversas músicas. Um destaque especial foi a quadrilha do terceirão, que apresentou uma coreografia totalmente original, criada do zero.</p>
+                </div>
+                <div class="fotos fotos-tres">
+                    <img src="escola.jpg" alt="A escola decorada para a festa junina" loading="lazy">
+                    <img src="ensaio.jpg" alt="Alunos ensaiando a quadrilha" loading="lazy">
+                    <img src="quadrilha.png" alt="Apresentação da quadrilha na festa" loading="lazy">
+                </div>
+            </div>
         </section>
-      
-        <section id="brincadeiras">
-            <h2>BRINCADEIRAS</h2>
-            <ul>
-                <li>Pescaria</li>
-                <li>Jogo da argola</li>
-                <li>Correio elegante</li>
-                <li>Boca do palhaço</li>
-                <li>Roleta</li>
-                <li>Cadeia</li>              
-            </ul>
-            <div class="imagem"><img src="brinca.jpg" alt="brincadeiras"></div>
-            <p>O destaque foi para o correio elegante, uma brincadeira típica de festa junina em que você pode enviar uma mensagem repleta de afeto e carinho para quem mais ama. Pode ser o namorado(a), a melhor amiga ou aquela pessoa que você paquera há algum tempo.</p>
-            <div class="imagem"><img src="correio.png" alt="brincadeiras"></div>
+
+        <section class="secao secao-brincadeiras" id="brincadeiras">
+            <div class="container">
+                <h2>Brincadeiras</h2>
+                <div class="duas-colunas">
+                    <ul class="lista-brincadeiras">
+                        <li>Pescaria</li>
+                        <li>Jogo da argola</li>
+                        <li>Correio elegante</li>
+                        <li>Boca do palhaço</li>
+                        <li>Roleta</li>
+                        <li>Cadeia</li>
+                    </ul>
+                    <div class="fotos">
+                        <img src="brinca.jpg" alt="Participantes nas brincadeiras da festa" loading="lazy">
+                    </div>
+                </div>
+
+                <aside class="destaque">
+                    <div class="texto">
+                        <h3>Destaque: correio elegante</h3>
+                        <p>O destaque foi para o correio elegante, uma brincadeira típica de festa junina em que você pode enviar uma mensagem repleta de afeto e carinho para quem mais ama. Pode ser o namorado(a), a melhor amiga ou aquela pessoa que você paquera há algum tempo.</p>
+                    </div>
+                    <img src="correio.png" alt="Barraca do correio elegante" loading="lazy">
+                </aside>
+            </div>
         </section>
+
     </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>Festa junina do CCM República Oriental Uruguai.</p>
+            <a href="https://portal-uruguai.vercel.app">Voltar ao Portal Uruguai</a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
