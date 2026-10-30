@@ -1,78 +1,316 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+/* ==========================================================
+   Festa Junina | CCM República Oriental Uruguai
+   ========================================================== */
 
-:root{
-    --cabecalho: #ffff50;
-    --cor-de-fundo: #0b5c5f;
-    --cor-de-texto: rgb(0, 0, 0);
-    --cor-de-borda: rgb(0, 0, 0);
+:root {
+    --tinta: #2b1b0e;
+    --papel: #fff4c2;
+    --milho: #ffd93b;
+    --verde-agua: #0b5c5f;
+    --vermelho: #d7263d;
+    --laranja: #f08a24;
+    --rosa: #e0479e;
+    --branco: #ffffff;
+
+    --fonte-titulo: "Bowlby One", "Lexend", sans-serif;
+    --fonte-texto: "Lexend", system-ui, sans-serif;
+
+    --raio: 14px;
+    --largura: 1040px;
+    --altura-menu: 56px;
+}
+
+/* ---------- Base ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Lexend", sans-serif;
-    font-weight: normal;
-    font-style: normal;
     margin: 0;
-    padding: 0;
-    background: rgb(255,0,255);
-    background: linear-gradient(0deg, #ffffaa 0%, #ffffaa 100%);
+    font-family: var(--fonte-texto);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--tinta);
+    background-color: var(--papel);
 }
 
-header {
-    background-color: var(--cabecalho);
-    color: var(--cor-de-texto);
-    padding: 20px 0;
-    text-align: center;
-    color: var(--cor-de-texto);
-}
-
-.titulo-link {
-    color: var(--cor-de-texto);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: var(--cor-de-texto);
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-main {
-    padding: 20px;
-    color: var(--cor-de-texto);
-}
-
-section {
-    margin-bottom: 40px;
-    font-size: large;
-}
-
-section h2 {
-    color: var(--cor-de-texto);
-    border-bottom: 5px solid var(--cor-de-borda);
-    padding-bottom: 10px;
-}
-
-img{
-    max-width: 300px;
-    max-height: 300px;
-    width: auto;
+img {
+    display: block;
+    max-width: 100%;
     height: auto;
 }
 
-.imagem{
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 1rem;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+h2 { font-size: clamp(2rem, 5vw, 3.25rem); }
+h3 { font-size: clamp(1.25rem, 3vw, 1.625rem); }
+
+p {
+    margin: 0 0 1rem;
+    max-width: 62ch;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--vermelho);
+    outline-offset: 3px;
+}
+
+.container {
+    width: min(100% - 2rem, var(--largura));
+    margin-inline: auto;
+}
+
+/* ---------- Cabeçalho com bandeirinhas ---------- */
+
+.bandeirinhas {
+    height: 56px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='56' viewBox='0 0 300 56'%3E%3Cpath d='M0 3H300' stroke='%232b1b0e' stroke-width='2'/%3E%3Cpath d='M2 3h56L30 52z' fill='%23d7263d'/%3E%3Cpath d='M62 3h56L90 52z' fill='%230b5c5f'/%3E%3Cpath d='M122 3h56l-28 49z' fill='%23ffd93b'/%3E%3Cpath d='M182 3h56l-28 49z' fill='%23f08a24'/%3E%3Cpath d='M242 3h56l-28 49z' fill='%23e0479e'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: center top;
+}
+
+.cabecalho-titulo {
+    padding: 1.5rem 1rem 3rem;
     text-align: center;
+}
+
+.cabecalho h1 {
+    margin-bottom: 0.5rem;
+    font-size: clamp(3rem, 12vw, 6.5rem);
+    color: var(--verde-agua);
+    text-shadow: 4px 4px 0 var(--milho), 7px 7px 0 var(--vermelho);
+}
+
+.cabecalho p {
+    margin: 0 auto;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* ---------- Menu ---------- */
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: var(--verde-agua);
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    overflow-x: auto;
+}
+
+.menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    color: var(--papel);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    background-color: rgb(255 244 194 / 0.18);
+}
+
+.menu a[aria-current="true"] {
+    background-color: var(--milho);
+    color: var(--tinta);
+}
+
+.menu-portal {
+    border: 2px solid var(--papel);
+}
+
+.menu a:focus-visible {
+    outline-color: var(--milho);
+}
+
+/* ---------- Seções ---------- */
+
+.secao {
+    padding: clamp(3rem, 8vw, 5.5rem) 0;
+    scroll-margin-top: var(--altura-menu);
+}
+
+.secao-comidas {
+    background-color: var(--verde-agua);
+    color: var(--papel);
+}
+
+.secao-brincadeiras {
+    background-color: var(--milho);
+}
+
+.duas-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+.texto-duas-colunas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(1rem, 4vw, 3rem);
+    margin-bottom: 2rem;
+}
+
+.texto-duas-colunas p {
+    margin: 0;
+}
+
+/* ---------- Fotos ---------- */
+
+.fotos {
+    display: grid;
+    gap: 1rem;
+}
+
+.fotos img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--raio);
+    border: 4px solid var(--branco);
+    box-shadow: 0 10px 24px -12px rgb(43 27 14 / 0.6);
+}
+
+.fotos-lado-a-lado {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2.5rem;
+}
+
+.fotos-tres {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* ---------- Comidas ---------- */
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.etiquetas li {
+    padding: 0.5rem 1.25rem;
+    border-radius: 999px;
+    background-color: var(--milho);
+    color: var(--tinta);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+/* ---------- Brincadeiras ---------- */
+
+.lista-brincadeiras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+}
+
+.lista-brincadeiras li {
+    padding: 0.875rem 1rem;
+    border: 3px solid var(--tinta);
+    border-radius: var(--raio);
+    background-color: var(--papel);
+    font-weight: 500;
+}
+
+.destaque {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    margin-top: 3rem;
+    padding: clamp(1.25rem, 3vw, 2.25rem);
+    border-radius: var(--raio);
+    background-color: var(--papel);
+    border-left: 10px solid var(--vermelho);
+}
+
+.destaque p {
+    margin-bottom: 0;
+}
+
+.destaque img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--raio);
+}
+
+/* ---------- Rodapé ---------- */
+
+.rodape {
+    padding: 2rem 0;
+    background-color: var(--tinta);
+    color: var(--papel);
+    font-size: 0.9375rem;
+}
+
+.rodape .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+.rodape a {
+    color: var(--milho);
+}
+
+/* ---------- Telas menores ---------- */
+
+@media (max-width: 760px) {
+    .duas-colunas,
+    .texto-duas-colunas,
+    .destaque {
+        grid-template-columns: 1fr;
+    }
+
+    .fotos-tres {
+        grid-template-columns: 1fr;
+    }
+
+    .menu ul {
+        justify-content: flex-start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
 }
